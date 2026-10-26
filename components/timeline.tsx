@@ -17,9 +17,24 @@ function midpoint(start: number, end: number) {
   return (start + end) / 2;
 }
 
-export function Timeline({ periods = timelinePeriods, ui }: { periods?: typeof timelinePeriods; ui: Pick<UiCopy, "toBeContinued" | "viewChapter"> }) {
-  const [activeId, setActiveId] = useState(periods[periods.length - 1].id);
-  const active = periods.find((period) => period.id === activeId) ?? periods[0];
+export function Timeline({
+  periods = timelinePeriods,
+  ui,
+  activeId,
+  onActiveChange,
+}: {
+  periods?: typeof timelinePeriods;
+  ui: Pick<UiCopy, "toBeContinued" | "viewChapter">;
+  activeId?: string;
+  onActiveChange?: (id: string) => void;
+}) {
+  const [internalId, setInternalId] = useState(periods[periods.length - 1].id);
+  const currentId = activeId ?? internalId;
+  const select = (id: string) => {
+    onActiveChange?.(id);
+    if (activeId === undefined) setInternalId(id);
+  };
+  const active = periods.find((period) => period.id === currentId) ?? periods[0];
   const activeAt = place(midpoint(active.start, active.end));
   const cardAt = Math.min(78, Math.max(24, activeAt));
 
@@ -54,7 +69,7 @@ export function Timeline({ periods = timelinePeriods, ui }: { periods?: typeof t
                 className="group/node absolute top-1/2 -translate-x-1/2 -translate-y-1/2"
                 style={{ left: `${at}%` }}
                 aria-pressed={selected}
-                onClick={() => setActiveId(period.id)}
+                onClick={() => select(period.id)}
               >
                 <span
                   className={`block rounded-full border-2 border-white transition duration-200 group-hover/node:scale-125 group-hover/node:border-[#f03434]! group-hover/node:bg-[#f03434]! ${selected ? "h-4 w-4 bg-white" : "h-3 w-3 bg-black"}`}
@@ -103,7 +118,7 @@ export function Timeline({ periods = timelinePeriods, ui }: { periods?: typeof t
                 type="button"
                 className="group/node flex w-full items-center gap-4 text-left"
                 aria-pressed={selected}
-                onClick={() => setActiveId(period.id)}
+                onClick={() => select(period.id)}
               >
                 <span
                   className={`h-3 w-3 shrink-0 rounded-full border-2 border-white transition duration-200 group-hover/node:scale-125 group-hover/node:border-[#f03434] group-hover/node:bg-[#f03434] ${selected ? "bg-white" : "bg-transparent"}`}
@@ -144,8 +159,9 @@ function PeriodCard({ period, viewChapter }: { period: (typeof timelinePeriods)[
       <p className="mt-2 text-white/70">{period.role}</p>
       {period.summary ? <p className="mt-3 max-w-sm leading-7 text-white/60">{period.summary}</p> : null}
       {period.href ? (
-        <Link href={period.href} className="mt-4 inline-block text-sm text-white no-underline transition-colors duration-200 hover:text-[#f03434]">
-          {viewChapter}
+        <Link href={period.href} className="chapter-link mt-4">
+          <span>{viewChapter.replace(/\s*→\s*$/, "")}</span>
+          <span className="chapter-link__arrow" aria-hidden="true">→</span>
         </Link>
       ) : null}
     </div>

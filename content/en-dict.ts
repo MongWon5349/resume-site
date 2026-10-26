@@ -26,7 +26,7 @@ export const enDict: Record<string, string> = {
   "熟练使用 Cursor、ChatGPT 搭建内容、SEO 和社媒工作流":
     "Builds content, SEO, and social workflows in Cursor and ChatGPT",
   设计与剪辑: "Design & editing",
-  "Canva、Photoshop、Figma、剪映、Loveart": "Canva, Photoshop, Figma, CapCut, Loveart",
+  "Canva、Photoshop、Figma、剪映、Lovart": "Canva, Photoshop, Figma, CapCut, Lovart",
   英语: "English",
   "英语口语流畅，可作为工作语言，能独立完成英文内容制作、海外 KOL 沟通":
     "Fluent working English for content production and overseas creator communication",
@@ -126,6 +126,7 @@ export const enDict: Record<string, string> = {
   KOL播放量: "KOL views",
   "9000 万+": "90M+",
   "App 用户增长": "App growth",
+  "App 增长": "App growth",
   "制定并执行用户增长策略，建立用户转化模型。通过社媒、KOL 合作、付费广告、SEO 和内容营销提升品牌知名度。":
     "Set and ran the growth strategy and the conversion model, using social, KOL partnerships, paid ads, SEO, and content to build the brand.",
   "App 下载用户 8000 万+，用户基数连续三年翻倍增长，MAU 年度同比增长 60%，B 端与 C 端收入连续两年翻倍增长。":
@@ -240,4 +241,24 @@ export const enDict: Record<string, string> = {
   "UGC租房平台 · 市场营销策划": "UGC rental platform · Marketing",
   "App 下载 8000 万+，Instagram 矩阵粉丝 40 万+。": "80M+ app downloads and 400k+ Instagram followers.",
   "官网访问 10 万+，ToC/ToB 增长。": "100k+ site visitors, across consumer and business growth.",
+  "海外 AI 产品 · ToB": "Overseas AI product · Business",
+  "负责官网、内容、视频、社群和海内外增长，以及 ToB 售前。":
+    "Led the website, content, video, community, and growth in China and overseas, plus business pre-sales.",
+  社群: "Community",
+  "国内外社群约 4,000 人，公众号粉丝 3000+。": "About 4,000 people in communities, and 3,000+ Official Account followers.",
+  "ToB 售前": "Business pre-sales",
+  "企业版演示、使用手册，并把客户需求同步给产品。":
+    "Enterprise demos and user guides, with customer requirements passed to product.",
+  "国内 UGC 租房 · 海外获客": "China UGC rentals · Overseas acquisition",
+  "负责 App 用户增长、国内社媒和海外获客。": "Led app growth, China social, and overseas acquisition.",
+  "下载用户 8000 万+，MAU 年度同比增长 60%。": "80M+ downloads, and MAU up 60% year over year.",
+  海外获客: "Overseas acquisition",
+  "Instagram 矩阵粉丝 40 万+，转化海外用户 20 万+。": "400k+ Instagram followers and 200k+ overseas users acquired.",
+  "品牌账号粉丝 4 万+，赞藏 7.4 万+。": "40k+ followers and 74k+ likes and saves on the brand accounts.",
+  用户视频: "User films",
+  "全平台播放量 100 万+，流量互动 10 万+。": "1M+ views and 100k+ interactions across platforms.",
+  "官网访问 10 万+，三个月博客 2000+ 页。": "100k+ site visitors and 2,000+ blog pages in three months.",
+  "官网访问 10 万+，三个月博客 2000+ 页。黑客松 100+ 个已上线应用。":
+    "100k+ site visitors and 2,000+ blog pages in three months. The hackathon shipped 100+ live apps.",
+  "100+ 个已上线应用。": "100+ live apps.",
 };

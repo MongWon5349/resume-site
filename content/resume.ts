@@ -118,7 +118,7 @@ export const skills = [
   },
   { name: "KOL", detail: "国内外达人合作、brief 和内容审核" },
   { name: "AI - Native", detail: "熟练使用 Cursor、ChatGPT 搭建内容、SEO 和社媒工作流" },
-  { name: "设计与剪辑", detail: "Canva、Photoshop、Figma、剪映、Loveart" },
+  { name: "设计与剪辑", detail: "Canva、Photoshop、Figma、剪映、Lovart" },
   { name: "英语", detail: "英语口语流畅，可作为工作语言，能独立完成英文内容制作、海外 KOL 沟通" },
 ];
 
@@ -584,6 +584,40 @@ export const homeMetrics = [
   { value: "40万+", label: "Instagram 粉丝" },
 ];
 
+export const homeChapters = [
+  {
+    id: "infinisynapse",
+    company: "InfiniSynapse",
+    market: "海外 AI 产品 · ToB",
+    period: "2025.11 – 2026.10",
+    role: "AI Data Agent 整体运营负责人",
+    summary: "负责官网、内容、视频、社群和海内外增长，以及 ToB 售前。",
+    href: "/work/infinisynapse",
+    items: [
+      { skill: "SEO", result: "三个月博客 2000+ 页，全站访问 10 万+。" },
+      { skill: "社群", result: "国内外社群约 4,000 人，公众号粉丝 3000+。" },
+      { skill: "黑客松", result: "100+ 个已上线应用。" },
+      { skill: "ToB 售前", result: "企业版演示、使用手册，并把客户需求同步给产品。" },
+    ],
+  },
+  {
+    id: "wellcee",
+    company: "Wellcee",
+    market: "国内 UGC 租房 · 海外获客",
+    period: "2021.02 – 2025.08",
+    role: "市场营销策划",
+    summary: "负责 App 用户增长、国内社媒和海外获客。",
+    href: "/work/wellcee",
+    items: [
+      { skill: "App 增长", result: "下载用户 8000 万+，MAU 年度同比增长 60%。" },
+      { skill: "KOL", result: "合作 KOL / KOC 400+，全平台播放量 9000 万+。" },
+      { skill: "海外获客", result: "Instagram 矩阵粉丝 40 万+，转化海外用户 20 万+。" },
+      { skill: "小红书", result: "品牌账号粉丝 4 万+，赞藏 7.4 万+。" },
+      { skill: "用户视频", result: "全平台播放量 100 万+，流量互动 10 万+。" },
+    ],
+  },
+];
+
 export const homeProjects = [
   {
     title: "SEO 体系",
@@ -627,6 +661,7 @@ export const visualWorks = [
   {
     title: "Vibe Coding Hackathon · EN",
     category: "海外赛事 · 宣发视频",
+    company: "infinisynapse",
     src: "/visuals/hackathon-en.mp4",
     href: "https://infinisynapse.com/en/hackathon/2026",
     row: 1,
@@ -636,6 +671,7 @@ export const visualWorks = [
   {
     title: "加拿大背包客Dragos在北京胡同的生活",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-01.png",
     href: "https://weixin.qq.com/sph/AiK1pJ4ZPP",
     row: 1,
@@ -645,6 +681,7 @@ export const visualWorks = [
   {
     title: "北影导演系高材生的租房故事",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-02.png",
     href: "https://weixin.qq.com/sph/A3iVv6voy0",
     row: 1,
@@ -654,6 +691,7 @@ export const visualWorks = [
   {
     title: "北大艺术家/诗人在线招室友",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-03.png",
     href: "https://weixin.qq.com/sph/Acnni1L8jG",
     row: 1,
@@ -663,6 +701,7 @@ export const visualWorks = [
   {
     title: "Do You Really Know China?\n乌克兰博主Nika的北京生活",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-04.png",
     href: "https://weixin.qq.com/sph/AeYWPQeNaV",
     row: 1,
@@ -672,6 +711,7 @@ export const visualWorks = [
   {
     title: "A Day in the Life of a Software Engineer\n大厂程序员的胡同生活",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-05.png",
     href: "https://weixin.qq.com/sph/Aduml78iYf",
     row: 1,
@@ -681,6 +721,7 @@ export const visualWorks = [
   {
     title: "Wellcee × COHO\n艺术家彭铎的胡同记忆",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-06.png",
     href: "https://weixin.qq.com/sph/AQd9HeYJDj",
     row: 1,
@@ -690,6 +731,7 @@ export const visualWorks = [
   {
     title: "Angel 的中国故事",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-07.png",
     href: "https://weixin.qq.com/sph/AzFBKjCG1k",
     row: 1,
@@ -699,6 +741,7 @@ export const visualWorks = [
   {
     title: "法国小伙在北京的租房生活",
     category: "Wellcee · 用户视频",
+    company: "wellcee",
     src: "/user-stories/story-08.png",
     href: "https://weixin.qq.com/sph/AJBe6IiKWR",
     row: 1,
@@ -708,6 +751,7 @@ export const visualWorks = [
   {
     title: "Vibe Coding 黑客松",
     category: "海外赛事 · 小红书封面",
+    company: "infinisynapse",
     src: "/visuals/hackathon-xhs.webp",
     href: "https://infinisynapse.com/en/hackathon/2026",
     row: 1,
@@ -716,6 +760,7 @@ export const visualWorks = [
   {
     title: "七日打卡活动",
     category: "用户运营 · 活动长图",
+    company: "infinisynapse",
     src: "/visuals/seven-day-checkin.webp",
     href: "https://infinisynapse.cn/",
     row: 3,
@@ -724,6 +769,7 @@ export const visualWorks = [
   {
     title: "AI 时代企业如何解决数据问题",
     category: "直播宣发 · 视频号海报",
+    company: "infinisynapse",
     src: "/visuals/founder-live-0820.webp",
     href: "https://infinisynapse.cn/",
     row: 3,
@@ -732,6 +778,7 @@ export const visualWorks = [
   {
     title: "数据洞察创作者招募",
     category: "创作者运营 · 招募海报",
+    company: "infinisynapse",
     src: "/visuals/creator-recruitment.webp",
     href: "https://infinisynapse.cn/",
     row: 3,
@@ -740,6 +787,7 @@ export const visualWorks = [
   {
     title: "请您挑刺",
     category: "Wellcee · 用户调研海报",
+    company: "wellcee",
     src: "/visuals/wellcee-challenge.webp",
     href: "/work/wellcee",
     row: 2,
@@ -748,6 +796,7 @@ export const visualWorks = [
   {
     title: "Vibe Coding 泛数据分析应用开发大赛",
     category: "国内赛事 · 主视觉海报",
+    company: "infinisynapse",
     src: "/hackathon/cn-contest.png",
     href: "https://infinisynapse.cn/contest/vibe-coding",
     row: 3,
@@ -756,6 +805,7 @@ export const visualWorks = [
   {
     title: "Data Agent · 新文明",
     category: "内容专题 · 视觉封面",
+    company: "infinisynapse",
     src: "/visuals/data-agent-story.png",
     href: "https://infinisynapse.com/en/blog/what-is-a-data-agent",
     row: 2,
@@ -764,6 +814,7 @@ export const visualWorks = [
   {
     title: "获奖名单正式公布",
     category: "赛事收官 · 小红书海报",
+    company: "infinisynapse",
     src: "/visuals/contest-awards.png",
     href: "https://infinisynapse.cn/contest/vibe-coding/gallery",
     row: 3,
@@ -772,6 +823,7 @@ export const visualWorks = [
   {
     title: "InfiniSynapse + GPT 5.6 Sol",
     category: "产品宣发 · 社媒封面",
+    company: "infinisynapse",
     src: "/visuals/gpt56-launch.png",
     href: "https://infinisynapse.com/",
     row: 3,
@@ -780,6 +832,7 @@ export const visualWorks = [
   {
     title: "迁服倒计时",
     category: "品牌运营 · 小红书通知海报",
+    company: "infinisynapse",
     src: "/visuals/domain-migration-cover.png",
     href: "https://www.xiaohongshu.com/explore/6ab48e78000000001a021a0c?xsec_token=AB3vAzdlrUsonn-VwWCg-QY_p8pHUiUSjC1CrK-7Fs67c=&xsec_source=pc_user",
     row: 3,
@@ -788,6 +841,7 @@ export const visualWorks = [
   {
     title: "弄堂夜骑",
     category: "Wellcee · 城市社群活动海报",
+    company: "wellcee",
     src: "/visuals/wellcee-night-rider.webp",
     href: "/work/wellcee",
     row: 4,
@@ -796,6 +850,7 @@ export const visualWorks = [
   {
     title: "Frisbee & Picnic",
     category: "Wellcee · 户外活动海报",
+    company: "wellcee",
     src: "/visuals/wellcee-frisbee.webp",
     href: "/work/wellcee",
     row: 4,
@@ -804,6 +859,7 @@ export const visualWorks = [
   {
     title: "Mid-Autumn Roof Party",
     category: "Wellcee · 节日活动海报",
+    company: "wellcee",
     src: "/visuals/wellcee-autumn-party.webp",
     href: "/work/wellcee",
     row: 4,
@@ -812,6 +868,7 @@ export const visualWorks = [
   {
     title: "LGBT Pride · Love is Love",
     category: "Wellcee · 品牌价值视觉",
+    company: "wellcee",
     src: "/visuals/wellcee-pride-photo.webp",
     href: "/work/wellcee",
     row: 4,
@@ -820,6 +877,7 @@ export const visualWorks = [
   {
     title: "Love is Love",
     category: "Wellcee · Pride 字体海报",
+    company: "wellcee",
     src: "/visuals/wellcee-pride-type.webp",
     href: "/work/wellcee",
     row: 4,
@@ -828,6 +886,7 @@ export const visualWorks = [
   {
     title: "Workout Party",
     category: "Wellcee · 运动社群海报",
+    company: "wellcee",
     src: "/visuals/wellcee-workout.webp",
     href: "/work/wellcee",
     row: 4,
@@ -847,55 +906,25 @@ export type TimelinePeriod = {
   href?: string;
 };
 
-/** Visual positions are compressed so the 1997–2015 gap remains readable. */
 export const timelinePeriods: TimelinePeriod[] = [
   {
-    id: "birth",
-    start: 0.01,
-    end: 0.04,
-    years: "1997.07.18",
-    markerLabel: "出生",
-    title: "北京 · 协和医院",
-    role: "出生",
-    summary: "",
-  },
-  {
-    id: "high-school",
-    start: 0.13,
-    end: 0.24,
-    years: "2012 – 2015",
-    markerLabel: "北京第二外国语学院\n附属中学",
-    title: "北京第二外国语学院附属中学",
-    role: "高中",
-    summary: "2012 年赴英交换 · Edinburgh, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿",
-  },
-  {
-    id: "education",
-    start: 0.31,
-    end: 0.45,
-    years: "2015 – 2019",
-    title: "北京印刷学院",
-    role: "新闻学 · 本科",
-    summary: "大学英语六级。",
-  },
-  {
     id: "wellcee",
-    start: 0.56,
-    end: 0.84,
+    start: 0.12,
+    end: 0.42,
     years: "2021.02 – 2025.08",
-    title: "唯心所寓",
-    role: "UGC租房平台 · 市场营销策划",
+    title: "Wellcee",
+    role: "国内 UGC 租房 · 海外获客",
     summary: "App 下载 8000 万+，Instagram 矩阵粉丝 40 万+。",
     href: "/work/wellcee",
   },
   {
     id: "infinisynapse",
-    start: 0.9,
-    end: 1,
+    start: 0.58,
+    end: 0.88,
     years: "2025.11 – 2026.10",
     title: "InfiniSynapse",
-    role: "AI Data Agent 整体运营负责人",
-    summary: "官网访问 10 万+，ToC/ToB 增长。",
+    role: "海外 AI 产品 · ToB",
+    summary: "官网访问 10 万+，三个月博客 2000+ 页。黑客松 100+ 个已上线应用。",
     href: "/work/infinisynapse",
   },
 ];

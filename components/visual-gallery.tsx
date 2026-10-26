@@ -6,17 +6,6 @@ import type { UiCopy } from "@/content/site";
 
 type Work = (typeof visualWorks)[number];
 
-const storyPlaces = [
-  "col-start-2 row-start-1",
-  "col-start-3 row-start-1",
-  "col-start-4 row-start-2",
-  "col-start-4 row-start-3",
-  "col-start-3 row-start-4",
-  "col-start-2 row-start-4",
-  "col-start-1 row-start-3",
-  "col-start-1 row-start-2",
-];
-
 function WorkMedia({ work, frame }: { work: Work; frame: string }) {
   return work.src.endsWith(".mp4") ? (
     <video
@@ -27,7 +16,7 @@ function WorkMedia({ work, frame }: { work: Work; frame: string }) {
       loop
       playsInline
       preload="metadata"
-      className={`${frame} transition duration-700 ease-out group-hover:brightness-[0.58]`}
+      className={`${frame} w-full transition duration-700 ease-out group-hover:brightness-[0.58]`}
     />
   ) : (
     <img
@@ -52,13 +41,7 @@ function WorkCaption({ work }: { work: Work }) {
 
 export function VisualGallery({ works, ui }: { works: Work[]; ui: Pick<UiCopy, "videos" | "posters" | "close"> }) {
   const videos = works.filter((work) => work.kind === "video" || work.src.endsWith(".mp4"));
-  const posterWorks = works.filter((work) => work.kind !== "video" && !work.src.endsWith(".mp4"));
-  const posters = [
-    ...posterWorks.filter((work) => work.aspect >= 0.45),
-    ...posterWorks.filter((work) => work.aspect < 0.45),
-  ];
-  const featuredVideos = videos.filter((work) => work.src.endsWith(".mp4"));
-  const storyVideos = videos.filter((work) => !work.src.endsWith(".mp4"));
+  const posters = works.filter((work) => work.kind !== "video" && !work.src.endsWith(".mp4"));
   const [open, setOpen] = useState<Work | null>(null);
 
   useEffect(() => {
@@ -77,39 +60,29 @@ export function VisualGallery({ works, ui }: { works: Work[]; ui: Pick<UiCopy, "
 
   return (
     <div className="mt-10">
-      <h3 className="visual-kind">{ui.videos}</h3>
-      <div className="mt-5 grid grid-cols-4 gap-3">
-        {featuredVideos.map((work) => (
-          <a
-            key={work.src}
-            href={work.href}
-            target="_blank"
-            rel="noreferrer"
-            className="group relative col-start-2 row-start-2 col-span-2 row-span-2 block overflow-hidden rounded-2xl border border-white/15 bg-black no-underline"
-          >
-            <WorkMedia work={work} frame="absolute inset-0 h-full object-cover" />
-            <WorkCaption work={work} />
-          </a>
-        ))}
-        {storyVideos.map((work, index) => (
-          <a
-            key={work.src}
-            href={work.href}
-            target="_blank"
-            rel="noreferrer"
-            className={`group relative block overflow-hidden rounded-2xl border border-white/15 bg-black no-underline ${storyPlaces[index] ?? ""}`}
-          >
-            <WorkMedia work={work} frame="aspect-video" />
-            <WorkCaption work={work} />
-            <span className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-sm text-white transition group-hover:bg-white group-hover:text-black">
-              ▶
-            </span>
-          </a>
-        ))}
-      </div>
+      {videos.length > 0 ? <h3 className="visual-kind">{ui.videos}</h3> : null}
+      {videos.length > 0 ? (
+        <div className="mt-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {videos.map((work) => (
+            <a
+              key={work.src}
+              href={work.href}
+              target="_blank"
+              rel="noreferrer"
+              className={`group relative block overflow-hidden rounded-2xl border border-white/15 bg-black no-underline ${work.src.endsWith(".mp4") ? "col-span-2" : ""}`}
+            >
+              <WorkMedia work={work} frame="aspect-video" />
+              <WorkCaption work={work} />
+              <span className="absolute left-1/2 top-1/2 flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-black/55 text-sm text-white transition group-hover:bg-white group-hover:text-black">
+                ▶
+              </span>
+            </a>
+          ))}
+        </div>
+      ) : null}
 
-      <h3 className="visual-kind mt-12">{ui.posters}</h3>
-      <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+      {posters.length > 0 ? <h3 className={`visual-kind ${videos.length > 0 ? "mt-12" : ""}`}>{ui.posters}</h3> : null}
+      {posters.length > 0 ? <div className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {posters.map((work) => (
           <button
             key={work.src}
@@ -124,7 +97,7 @@ export function VisualGallery({ works, ui }: { works: Work[]; ui: Pick<UiCopy, "
             </span>
           </button>
         ))}
-      </div>
+      </div> : null}
 
       {open ? (
         <div

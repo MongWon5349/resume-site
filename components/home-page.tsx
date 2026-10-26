@@ -1,7 +1,5 @@
 import { Chrome } from "@/components/chrome";
-import { SkillsMarquee } from "@/components/skills-marquee";
-import { Timeline } from "@/components/timeline";
-import { VisualGallery } from "@/components/visual-gallery";
+import { ExperienceSwitcher } from "@/components/experience-switcher";
 import { getSite } from "@/content/site";
 import type { Locale } from "@/lib/i18n";
 
@@ -19,7 +17,6 @@ export function HomePage({ locale = "zh" }: { locale?: Locale }) {
                 {profile.name}
               </h1>
               <p className="mt-12 text-2xl tracking-tight sm:mt-16 sm:text-3xl">{ui.hero}</p>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-white/60 sm:text-lg">{profile.summary}</p>
             </div>
             <div className="justify-self-center lg:justify-self-end">
               <img
@@ -33,60 +30,13 @@ export function HomePage({ locale = "zh" }: { locale?: Locale }) {
           </div>
         </section>
 
-        <section id="experience" className="scroll-mt-24 px-5 py-16 sm:px-8 lg:px-16 lg:py-14">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="section-banner">{ui.experience}</h2>
-            <div className="mt-8">
-              <Timeline periods={site.timelinePeriods} ui={ui} />
-            </div>
-          </div>
-        </section>
+        <ExperienceSwitcher periods={site.timelinePeriods} chapters={site.homeChapters} works={site.visualWorks} ui={ui} />
 
-        <section id="skills" className="flex scroll-mt-24 items-center px-5 py-20 sm:px-8 lg:min-h-[52svh] lg:px-16 lg:py-16">
-          <div className="mx-auto w-full max-w-6xl">
-            <h2 className="section-banner">{ui.skills}</h2>
-            <SkillsMarquee skills={site.homeSkills} />
-          </div>
-        </section>
-
-        <section id="results" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-16 lg:py-16">
+        <section id="education" className="scroll-mt-24 px-5 py-16 sm:px-8 lg:px-16 lg:py-14">
           <div className="mx-auto max-w-6xl">
-            <h2 className="section-banner">{ui.results}</h2>
-            <dl className="mt-10 grid grid-cols-2 gap-x-6 gap-y-8 lg:grid-cols-4">
-              {site.homeMetrics.map((metric) => (
-                <div key={metric.label}>
-                  <dt className="text-3xl font-medium tracking-tight sm:text-4xl">{metric.value}</dt>
-                  <dd className="mt-2 text-sm text-white/55">{metric.label}</dd>
-                </div>
-              ))}
-            </dl>
-            <ul className="mt-12 grid gap-4 lg:grid-cols-3">
-              {site.homeProjects.map((project) => (
-                <li
-                  key={project.title}
-                  className="group rounded-3xl border border-white/15 p-7 transition duration-300 ease-out hover:-translate-y-2 hover:border-[#f03434] hover:bg-[#f03434] hover:text-white hover:shadow-[0_24px_70px_rgba(240,52,52,0.28)]"
-                >
-                  <h3 className="text-3xl tracking-tight">{project.title}</h3>
-                  <p className="mt-4 leading-7 text-white/60 transition-colors duration-300 group-hover:text-white/85">
-                    {project.result}
-                  </p>
-                  <a
-                    href={project.href}
-                    className="mt-6 inline-flex items-center gap-2 text-sm text-white no-underline transition-colors duration-300 group-hover:text-white"
-                  >
-                    {project.link}
-                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        <section id="visuals" className="scroll-mt-24 px-5 py-20 sm:px-8 lg:px-16 lg:py-16">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="section-banner">{ui.visuals}</h2>
-            <VisualGallery works={site.visualWorks} ui={ui} />
+            <h2 className="section-banner">{ui.education}</h2>
+            <p className="mt-6 text-2xl tracking-tight">{site.education.school}</p>
+            <p className="mt-2 text-white/60">{site.education.detail}</p>
           </div>
         </section>
 

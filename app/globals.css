@@ -281,6 +281,62 @@ a {
   letter-spacing: -0.03em;
 }
 
+.chapter-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  border-radius: 999px;
+  background: #f03434;
+  padding: 0.7rem 1.15rem 0.7rem 1.3rem;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 0 0 0 rgb(240 52 52 / 0.5);
+  animation: chapter-link-pulse 2.2s ease-out infinite;
+}
+
+.chapter-link:hover {
+  background: #ff4545;
+  animation: none;
+}
+
+.chapter-link__arrow {
+  display: inline-block;
+  animation: chapter-link-nudge 1.4s ease-in-out infinite;
+}
+
+.chapter-link:hover .chapter-link__arrow {
+  animation: none;
+  transform: translateX(4px);
+}
+
+@keyframes chapter-link-nudge {
+  0%,
+  55%,
+  100% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(7px);
+  }
+}
+
+@keyframes chapter-link-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(240 52 52 / 0.45);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgb(240 52 52 / 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(240 52 52 / 0);
+  }
+}
+
 @keyframes marquee-left {
   from {
     transform: translateX(0);
@@ -310,7 +366,9 @@ a {
     transition: none;
   }
 
-  .skills-marquee__track {
-    animation-play-state: paused;
+  .skills-marquee__track,
+  .chapter-link,
+  .chapter-link__arrow {
+    animation: none;
   }
 }
