@@ -9,7 +9,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const title = "庞梦媛 · AI 产品增长 / 整体运营";
+const title = "庞梦媛 · AI 产品增长 / 全栈运营";
 
 export const metadata: Metadata = {
   title,

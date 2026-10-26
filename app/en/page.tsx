@@ -5,10 +5,10 @@ import { getSite } from "@/content/site";
 const site = getSite("en");
 
 export const metadata: Metadata = {
-  title: "Mengyuan Pang · AI Product Growth / Head of Operations",
+  title: "Mengyuan Pang · AI Product Growth / Full-stack Operations",
   description: site.profile.summary,
   openGraph: {
-    title: "Mengyuan Pang · AI Product Growth / Head of Operations",
+    title: "Mengyuan Pang · AI Product Growth / Full-stack Operations",
     description: site.profile.summary,
     locale: "en_US",
     type: "profile",

@@ -2,7 +2,7 @@
 export const enDict: Record<string, string> = {
   庞梦媛: "Mengyuan Pang",
   "女 · 籍贯北京 · ENFJ": "Beijing · ENFJ",
-  "AI 产品增长 / 整体运营": "AI Product Growth / Head of Operations",
+  "AI 产品增长 / 全栈运营": "AI Product Growth / Full-stack Operations",
   "近 6 年增长运营经验。2021 年至 2025 年在互联网UGC租房平台「Wellcee」负责 App 用户增长、海外社媒矩阵和 KOL 合作；2025 年 11 月起在 AI-native Data Agent「InfiniSynapse」负责官网、内容、视频、社群、用户增长和海内外社媒运营，ToB售前支持。":
     "Nearly six years in growth. From 2021 to 2025, I led app acquisition, an overseas social matrix, and KOL partnerships at Wellcee, a UGC rental platform. Since November 2025, I have led operations for InfiniSynapse, an AI-native Data Agent: website, content, video, community, growth, social channels in China and overseas, and pre-sales for business customers.",
   "三个月上线页面": "Pages shipped in 3 months",
@@ -31,7 +31,7 @@ export const enDict: Record<string, string> = {
   "英语口语流畅，可作为工作语言，能独立完成英文内容制作、海外 KOL 沟通":
     "Fluent working English for content production and overseas creator communication",
   "上海衡数无限科技有限公司 · InfiniSynapse": "Hengshu Infinite Technology · InfiniSynapse",
-  "AI Data Agent 整体运营负责人": "Head of Operations, AI Data Agent",
+  "AI Data Agent 全栈运营负责人": "Full-stack Operations Lead, AI Data Agent",
   "全站访问用户": "Site visitors",
   "10万+": "100k+",
   博客页面: "Blog pages",
@@ -261,4 +261,26 @@ export const enDict: Record<string, string> = {
   "官网访问 10 万+，三个月博客 2000+ 页。黑客松 100+ 个已上线应用。":
     "100k+ site visitors and 2,000+ blog pages in three months. The hackathon shipped 100+ live apps.",
   "100+ 个已上线应用。": "100+ live apps.",
+  "从 0 搭起搜索内容，三个月上线博客 2000+ 页，站点访问到 10 万+。":
+    "Built search content from scratch, shipped 2,000+ blog pages in three months, and brought the site to 100k+ visitors.",
+  "建起并维护国内外社群，约 4,000 人，公众号粉丝 3000+。":
+    "Built and ran communities in China and overseas, about 4,000 people, with 3,000+ Official Account followers.",
+  "设计并推动 Vibe Coding 黑客松，征集到 100+ 个已上线作品。":
+    "Designed and ran the Vibe Coding hackathon, which collected 100+ live projects.",
+  "为企业客户做产品演示和使用手册，并把需求同步给产品。":
+    "Ran enterprise demos and wrote user guides, and passed customer requirements to product.",
+  "负责 App 拉新和活跃，下载用户到 8000 万+，MAU 年度同比增长 60%。":
+    "Led app acquisition and engagement, reaching 80M+ downloads, with MAU up 60% year over year.",
+  "谈下并管理 KOL / KOC 400+，内容全平台播放 9000 万+。":
+    "Signed and managed 400+ KOL / KOC partners, whose content reached 90M+ views.",
+  "从 0 搭建 Instagram 矩阵，粉丝到 40 万+，带来海外用户 20 万+。":
+    "Built an Instagram matrix from scratch, reaching 400k+ followers and 200k+ overseas users.",
+  "运营品牌账号，粉丝到 4 万+，赞藏 7.4 万+。":
+    "Ran the brand account to 40k+ followers and 74k+ likes and saves.",
+  "策划用户故事视频，全平台播放 100 万+，互动 10 万+。":
+    "Produced user-story videos with 1M+ views and 100k+ interactions.",
+  "负责 App 增长和海外社媒，下载用户到 8000 万+，Instagram 矩阵粉丝 40 万+。":
+    "Led app growth and overseas social, reaching 80M+ downloads and 400k+ Instagram followers.",
+  "在职期间推动上线博客 2000+ 页。设计并落地 Vibe Coding 黑客松，征集到 100+ 个上线作品。站点 10 万+ 访问，主要来自 SEO 和这场活动。":
+    "Shipped 2,000+ blog pages in the role. Designed and ran the Vibe Coding hackathon, which collected 100+ live projects. The site reached 100k+ visits, mainly from SEO and the event.",
 };
