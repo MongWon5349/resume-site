@@ -50,7 +50,9 @@ export const uiCopy = {
     chartAria: "2026 年 6 月到 11 月的 Google 搜索日均增长。横轴是月份，纵轴是指数，6 月等于 100。11 月只用前 19 天日均。",
     chartBaseline: "起点 100",
     chartNote:
-      "用日均，避免 11 月未满月被总量压矮。6 月 = 100。点击日均：6 月约 6 次 → 11 月（截至 19 日）约 53 次，指数 828。展示 8 月见顶后回落，9–10 月 CTR 回升。来源：Search Console，网页搜索，2026-05-20 至 11-19。",
+      "用日均，避免 11 月未满月被总量压矮。6 月 = 100。点击日均：6 月约 6 次 → 11 月（截至 19 日）约 53 次，指数 828。来源：Search Console，网页搜索，2026-05-20 至 11-19。",
+    chartDip:
+      "9–10 月回落的是展示，不是点击。8 月新页带着大量长尾进了较后位置，展示被抬高；随后低相关曝光掉下去，整月点击仍在约 1,270，CTR 从约 0.22% 回到约 0.42%。这是从铺量转到更准的词，不是流量崩了。",
     months: ["6月", "7月", "8月", "9月", "10月", "11月"],
     clicks: "点击次数",
     impressions: "展示次数",
@@ -90,7 +92,9 @@ export const uiCopy = {
     chartAria: "Daily Google Search growth from June to November 2026. The x-axis is months and the y-axis is an index, with June equal to 100. November uses the first 19 days only.",
     chartBaseline: "Baseline 100",
     chartNote:
-      "Daily averages so a partial November is comparable. June = 100. Daily clicks went from about 6 in June to about 53 in November (through the 19th), index 828. Impressions peaked in August, then CTR recovered in September–October. Source: Search Console, web search, 20 May–19 Nov 2026.",
+      "Daily averages so a partial November is comparable. June = 100. Daily clicks went from about 6 in June to about 53 in November (through the 19th), index 828. Source: Search Console, web search, 20 May–19 Nov 2026.",
+    chartDip:
+      "September–October dropped impressions, not clicks. August’s new pages pulled in a lot of long-tail, lower-position impressions; the less relevant ones then fell away. Monthly clicks stayed around 1,270, and CTR moved from about 0.22% to about 0.42%. That is a shift from spreading coverage to better queries, not a traffic collapse.",
     months: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
     clicks: "Clicks",
     impressions: "Impressions",

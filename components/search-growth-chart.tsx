@@ -126,6 +126,7 @@ export function SearchGrowthChart({ locale = "zh" }: { locale?: Locale }) {
       <p className="text-xs leading-5 text-[var(--faint)]">
         {copy.chartNote}
       </p>
+      <p className="mt-2 text-xs leading-5 text-[var(--faint)]">{copy.chartDip}</p>
     </figure>
   );
 }
