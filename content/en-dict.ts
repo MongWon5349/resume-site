@@ -3,8 +3,8 @@ export const enDict: Record<string, string> = {
   庞梦媛: "Mengyuan Pang",
   "女 · 籍贯北京 · ENFJ": "Beijing · ENFJ",
   "AI 产品增长 / 全栈运营": "AI Product Growth / Full-stack Operations",
-  "近 6 年增长运营经验。2021 年至 2025 年在互联网UGC租房平台「Wellcee」负责 App 用户增长、海外社媒矩阵和 KOL 合作；2025 年 11 月起在 AI-native Data Agent「InfiniSynapse」负责官网、SEO/GEO 内容、视频、社群、用户增长和海内外社媒运营，ToB售前支持。":
-    "Nearly six years in growth. From 2021 to 2025, I led app acquisition, an overseas social matrix, and KOL partnerships at Wellcee, a UGC rental platform. Since November 2025, I have led operations for InfiniSynapse, an AI-native Data Agent: website, SEO/GEO content, video, community, growth, social channels in China and overseas, and pre-sales for business customers.",
+  "近 6 年增长运营经验。2021 年至 2025 年在互联网UGC租房平台「Wellcee」负责 App 用户增长、海外社媒矩阵和 KOL 合作；2025 年 11 月起在 AI-native Data Agent「InfiniSynapse」负责官网、SEO/GEO、内容、视频、社群、用户增长和海内外社媒运营，ToB售前支持。":
+    "Nearly six years in growth. From 2021 to 2025, I led app acquisition, an overseas social matrix, and KOL partnerships at Wellcee, a UGC rental platform. Since November 2025, I have led operations for InfiniSynapse, an AI-native Data Agent: website, SEO/GEO, content, video, community, growth, social channels in China and overseas, and pre-sales for business customers.",
   "三个月上线页面": "Pages shipped in 3 months",
   "海外官网访问用户": "Overseas site visitors",
   "App 下载用户": "App downloads",
@@ -15,10 +15,10 @@ export const enDict: Record<string, string> = {
   用户增长: "Growth",
   "拉新、激活、留存、付费，以及社群承接": "Acquisition, activation, retention, revenue, and community handoff",
   内容与搜索: "Content & search",
-  "Google SEO、GEO（生成式引擎优化）、Reddit 社区内容、多平台策划":
-    "Google SEO, GEO (generative engine optimization), Reddit community content, and multi-platform planning",
-  "Google SEO、生成式引擎优化、Reddit 社区内容、多平台策划":
-    "Google SEO, generative engine optimization, Reddit community content, and multi-platform planning",
+  "GEO / SEO：比较页与定义页、Reddit 信源向内容、多平台分发":
+    "GEO / SEO: comparison and definition pages, Reddit as source-oriented content, and multi-platform distribution",
+  "比较页与定义页、Reddit 信源向内容、多平台分发":
+    "Comparison and definition pages, Reddit as source-oriented content, and multi-platform distribution",
   "SEO / GEO": "SEO / GEO",
   渠道: "Channels",
   "小红书、抖音、微博、知乎、公众号、视频号、CSDN 博客、Instagram、Facebook、YouTube、X、Discord":
@@ -41,13 +41,13 @@ export const enDict: Record<string, string> = {
   "ChatGPT 引用命中": "ChatGPT citation hits",
   "0→3/9": "0→3/9",
   黑客松注册转化: "Hackathon signups",
-  "负责 AI-native Data Agent 整体的运营和增长，包括产品的官网搭建、SEO/GEO 内容、视频、社群、用户增长和海内外社媒运营，ToB 用户的售前维护。":
-    "Led operations and growth for an AI-native Data Agent: the product site, SEO/GEO content, video, community, user growth, social channels in China and overseas, and pre-sales for business customers.",
+  "负责 AI-native Data Agent 整体的运营和增长，包括产品的官网搭建、SEO/GEO、内容、视频、社群、用户增长和海内外社媒运营，ToB 用户的售前维护。":
+    "Led operations and growth for an AI-native Data Agent: the product site, SEO/GEO, content, video, community, user growth, social channels in China and overseas, and pre-sales for business customers.",
   英文官网: "English site",
   中文官网: "Chinese site",
-  "1. 从 0 到 1 搭建 SEO / GEO 内容体系": "1. Built the SEO / GEO content system from zero",
-  "基于 SEMrush、Ahrefs 公开流量和自建 SEO 基线完成渠道与竞品调研。2026 年 7 月启动内容体系，页面按比较页、教程页、工具页、行业场景页组织。写的时候同时按 GEO 来：定义、参数、对比和限制写清楚，方便 Google 排名，也方便 ChatGPT 这类答案引擎抽取。三个月内国内外博客页面累计 2000+。":
-    "Used SEMrush, public Ahrefs traffic, and an in-house SEO baseline to research channels and competitors. In July 2026 the content system shipped comparison, tutorial, tool, and industry pages. Pages were written for GEO as well as SEO: definitions, parameters, comparisons, and limits, so they can rank on Google and be extracted by answer engines like ChatGPT. More than 2,000 blog pages shipped in three months.",
+  "1. 从 0 到 1 搭建 SEO 内容体系": "1. Built the SEO content system from zero",
+  "基于 SEMrush、Ahrefs 公开流量和自建 SEO 基线完成渠道与竞品调研。2026 年 7 月按该判断启动内容体系，页面按「比较页 + 教程页 + 工具页 + 定义/场景页」组织，同一套主题同时服务 Google 排名和可被模型抽取的事实。覆盖英文博客、工具页和中文博客，三个月内国内外博客页面累计 2000+。":
+    "Used SEMrush, public Ahrefs traffic, and an in-house SEO baseline to research channels and competitors. In July 2026 that became a system of comparison, tutorial, tool, and definition/use-case pages, written both for Google rankings and for facts models can extract. More than 2,000 blog pages shipped in three months across the English blog, tool pages, and Chinese blog.",
   竞品调研: "Competitor research",
   "2026 渠道与竞品增长方案": "2026 channel and competitor growth plan",
   英文: "English",
@@ -63,17 +63,18 @@ export const enDict: Record<string, string> = {
   供应链: "Supply chain",
   "全站访问用户 10万+。海外官网 2026-07-01 至 2026-10-20，PV 3.8 万，用户遍及 166 个国家，Google 自然搜索 4,452。同期 Google 搜索展示为 4,225 次点击、149 万次曝光，平均点击率 0.5%，平均排名 9。国内官网 2026-08-12（百度统计上线后）至 2026-10-20，PV 5,816，平均访问时长 3 分 19 秒，外链占比 27.42%。":
     "100k+ site visitors. From 1 Jul to 20 Oct 2026 the overseas site had 38k page views across 166 countries and 4,452 Google organic visits. Google Search showed 4,225 clicks, 1.49 million impressions, a 0.5% average CTR, and an average position of 9. From 12 Aug (when Baidu Analytics went live) to 20 Oct 2026, the China site had 5,816 page views, an average visit of 3 minutes 19 seconds, and 27.42% of traffic from external links.",
-  "2. Reddit 运营，按 GEO 信源来做": "2. Ran Reddit as a GEO source layer",
-  "不只把 Reddit 当发帖渠道，也当答案引擎可能采信的品类讨论场。版规、双账号人设和选题写进同一套 Skill，主帖和回复导向第一方比较文、":
-    "Treated Reddit as a category discussion space answer engines may trust, not just a posting channel. Subreddit rules, two account personas, and topics live in one skill. Posts and replies point to first-party comparisons, ",
+  "2. 按 GEO 思路做比较页、定义页和 Reddit 信源向内容":
+    "2. Built comparison pages, definition pages, and Reddit source-oriented content with a GEO lens",
+  "针对 ChatGPT 等回答引擎，按「可检索、可抽取、可核对」来写：比较页拦截选型问题，定义页写清 Data Agent 是什么、不是什么；Reddit 双账号在数据分析、SQL、AI Agent 品类讨论里贡献可核对的细节，并链到官网承接页，包括比较文、":
+    "Wrote for answer engines such as ChatGPT around retrieval, extraction, and verifiable detail: comparison pages for vendor selection, definition pages on what a Data Agent is and is not. Two Reddit accounts contributed checkable detail in data analysis, SQL, and AI agent threads, and linked to site pages, including comparisons, ",
   " 和 ": " and ",
   "。": ".",
   "karma 4,957（172 条贡献）": "4,957 karma (172 contributions)",
   "karma 827（115 条贡献）": "827 karma (115 contributions)",
   "账号 ": "Account ",
   " karma 4,957（172 条贡献），账号 ": " has 4,957 karma (172 contributions). Account ",
-  " karma 827（115 条贡献）。同期归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。":
-    " has 827 karma (115 contributions). More than 100 posts, replies, and reviews were archived and used to set SEO priority. Related videos also ran on WeChat Official Account, Channels, and Bilibili.",
+  " karma 827（115 条贡献）。完成定义页与比较页上线，Reddit 双账号持续产出；归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。":
+    " has 827 karma (115 contributions). Definition and comparison pages shipped, both Reddit accounts stayed active, and 100+ posts were archived to set SEO priority. Related videos also ran on WeChat Official Account, Channels, and Bilibili.",
   "3. 运营国内外社媒账号": "3. Ran social accounts in China and overseas",
   "从 0 到 1 搭建品牌社媒运营体系，为各平台单独建运营 Skill，由 AI 完成选题、策划、制作和发布，并把公域线索承接进私域社群。":
     "Built the brand social system from zero, with an operating skill for each platform. AI handles topics, planning, production, and publishing, and public leads are handed into private communities.",
@@ -194,6 +195,13 @@ export const enDict: Record<string, string> = {
   "三个月博客 2000+ 页，全站访问 10 万+。": "2,000+ blog pages in three months, and 100k+ site visitors.",
   "比较页与定义页支撑搜索；用固定 prompt 做 ChatGPT 引用基线。":
     "Comparison and definition pages for search, plus a fixed-prompt ChatGPT citation baseline.",
+  "比较页与定义页服务搜索；Reddit 做信源向内容。":
+    "Comparison and definition pages for search; Reddit as source-oriented content.",
+  GEO: "GEO",
+  "比较页、定义页按可抽取来写；Reddit 做信源向内容，复盘反哺 SEO 优先级。":
+    "Wrote comparison and definition pages to be extractable; ran Reddit as source-oriented content and fed reviews back into SEO priority.",
+  "搭建 SEO/GEO：比较页与定义页，Reddit 信源向内容。站点 10 万+ 访问；黑客松征集到 100+ 个上线作品。":
+    "Built SEO/GEO with comparison and definition pages, plus Reddit as source-oriented content. The site reached 100k+ visits; the hackathon collected 100+ live projects.",
   英文博客: "English blog",
   黑客松: "Hackathon",
   "国内 243 人报名，100+ 个已上线应用。": "243 registrations in China and 100+ live apps.",
@@ -249,16 +257,8 @@ export const enDict: Record<string, string> = {
   "App 下载 8000 万+，Instagram 矩阵粉丝 40 万+。": "80M+ app downloads and 400k+ Instagram followers.",
   "官网访问 10 万+，ToC/ToB 增长。": "100k+ site visitors, across consumer and business growth.",
   "海外 AI 产品 · ToB": "Overseas AI product · Business",
-  "负责官网、SEO/GEO 内容、视频、社群和海内外增长，以及 ToB 售前。":
-    "Led the website, SEO/GEO content, video, community, and growth in China and overseas, plus business pre-sales.",
-  "比较页和定义页按可被答案引擎抽取来写；三个月上线 2000+ 页，站点访问 10 万+。":
-    "Wrote comparison and definition pages so answer engines can extract them; 2,000+ pages in three months, and 100k+ site visits.",
-  "比较页与定义页同时面向 Google 和答案引擎。":
-    "Comparison and definition pages for Google and for answer engines.",
-  "搜索内容按 GEO 思路做成比较页和定义页。站点 10 万+ 访问；黑客松征集到 100+ 个上线作品。":
-    "Search content structured for GEO as comparison and definition pages. 100k+ site visits; the hackathon collected 100+ live projects.",
-  "负责官网、内容、视频、社群和海内外增长，以及 ToB 售前。":
-    "Led the website, content, video, community, and growth in China and overseas, plus business pre-sales.",
+  "负责官网、SEO/GEO、内容、视频、社群和海内外增长，以及 ToB 售前。":
+    "Led the website, SEO/GEO, content, video, community, and growth in China and overseas, plus business pre-sales.",
   社群: "Community",
   "国内外社群约 4,000 人，公众号粉丝 3000+。": "About 4,000 people in communities, and 3,000+ Official Account followers.",
   "ToB 售前": "Business pre-sales",
@@ -278,9 +278,6 @@ export const enDict: Record<string, string> = {
   "100+ 个已上线应用。": "100+ live apps.",
   "从 0 搭起搜索内容，三个月上线博客 2000+ 页，站点访问到 10 万+。":
     "Built search content from scratch, shipped 2,000+ blog pages in three months, and brought the site to 100k+ visitors.",
-  GEO: "GEO",
-  "用固定 prompt 测 ChatGPT：竞品 Hex 引 6 次、Julius 0 次；我方 Reddit 埋点从 0/5 到 3/9 被引用。":
-    "Fixed-prompt ChatGPT tests: Hex cited 6 times, Julius 0; our Reddit comments moved from 0/5 to 3/9 prompts cited.",
   "建起并维护国内外社群，约 4,000 人，公众号粉丝 3000+。":
     "Built and ran communities in China and overseas, about 4,000 people, with 3,000+ Official Account followers.",
   "设计并推动 Vibe Coding 黑客松，征集到 100+ 个已上线作品。":
