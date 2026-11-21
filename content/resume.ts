@@ -98,7 +98,7 @@ export const profile = {
   email: "mengyuanp5349@gmail.com",
   target: "AI 产品增长 / 全栈运营",
   summary:
-    "近 6 年增长运营经验。2021 年至 2025 年在互联网UGC租房平台「Wellcee」负责 App 用户增长、海外社媒矩阵和 KOL 合作；2025 年 11 月起在 AI-native Data Agent「InfiniSynapse」负责官网、内容、视频、社群、用户增长和海内外社媒运营，ToB售前支持。",
+    "近 6 年增长运营经验。2021 年至 2025 年在互联网UGC租房平台「Wellcee」负责 App 用户增长、海外社媒矩阵和 KOL 合作；2025 年 11 月起在 AI-native Data Agent「InfiniSynapse」负责官网、SEO/GEO、内容、视频、社群、用户增长和海内外社媒运营，ToB售前支持。",
   updated: "2026-10",
 };
 
@@ -111,13 +111,13 @@ export const metrics = [
 
 export const skills = [
   { name: "用户增长", detail: "拉新、激活、留存、付费，以及社群承接" },
-  { name: "内容与搜索", detail: "Google SEO、中文搜索内容、Reddit GEO、多平台内容策划" },
+  { name: "内容与搜索", detail: "Google SEO、GEO（固定 prompt 测 ChatGPT 引用）、Reddit 信源运营、多平台内容策划" },
   {
     name: "渠道",
     detail: "小红书、抖音、微博、知乎、公众号、视频号、CSDN 博客、Instagram、Facebook、YouTube、X、Discord",
   },
   { name: "KOL", detail: "国内外达人合作、brief 和内容审核" },
-  { name: "AI - Native", detail: "熟练使用 Cursor、ChatGPT 搭建内容、SEO 和社媒工作流" },
+  { name: "AI - Native", detail: "熟练使用 Cursor、ChatGPT 搭建内容、SEO/GEO 监测和社媒工作流" },
   { name: "设计与剪辑", detail: "Canva、Photoshop、Figma、剪映、Lovart" },
   { name: "英语", detail: "英语口语流畅，可作为工作语言，能独立完成英文内容制作、海外 KOL 沟通" },
 ];
@@ -134,11 +134,12 @@ export const jobs: Job[] = [
     theme: infiniTheme,
     highlights: [
       { value: "10万+", label: "全站访问用户" },
+      { value: "0→3/9", label: "ChatGPT 引用命中" },
       { value: "2000+", label: "博客页面" },
       { value: "5k+", label: "黑客松注册转化" },
     ],
     summary:
-      "负责 AI-native Data Agent 整体的运营和增长，包括产品的官网搭建、内容、视频、社群、用户增长和海内外社媒运营，ToB 用户的售前维护。",
+      "负责 AI-native Data Agent 整体的运营和增长，包括产品的官网搭建、SEO 与 GEO、内容、视频、社群、用户增长和海内外社媒运营，ToB 用户的售前维护。",
     lines: [
       { label: "英文官网", items: [{ label: "infinisynapse.com", href: "https://infinisynapse.com/" }] },
       { label: "中文官网", items: [{ label: "infinisynapse.cn", href: "https://infinisynapse.cn/" }] },
@@ -149,7 +150,7 @@ export const jobs: Job[] = [
         paragraphs: [
           [
             t(
-              "基于 SEMrush、Ahrefs 公开流量和自建 SEO 基线完成渠道与竞品调研。2026 年 7 月按该判断启动内容体系，页面按「比较页 + 教程页 + 工具页 + 行业场景页」组织，覆盖英文博客、工具页和中文博客。三个月内国内外博客页面累计 2000+。",
+              "基于 SEMrush、Ahrefs 公开流量，以及自建的 SEO 基线和 ChatGPT 引用基线做渠道与竞品调研：同一批 data agent 问题里 Hex 被引 6 次，Julius 搜索流量高但引用为 0。据此把搜索增长拆成「拦截采购词」和「成为可引用信源」两条线。2026 年 7 月启动内容体系，页面按比较页、教程页、工具页、行业场景页组织，既服务搜索结果，也给模型提供可抽取的定义和参数。三个月内国内外博客页面累计 2000+。",
             ),
           ],
         ],
@@ -193,11 +194,11 @@ export const jobs: Job[] = [
         searchChart: true,
       },
       {
-        title: "2. 建立 Reddit GEO 内容体系",
+        title: "2. 建立 GEO 监测，并用 Reddit 做可引用信源",
         paragraphs: [
           [
             t(
-              "为 Reddit GEO 单独建设一套运营 Skill，把版规、双账号人设、选题标准和 AI 引用目标写进同一套执行规则。日常运营由 AI 按这套 Skill 端到端完成，并按具体帖子定制主帖、嵌套回复和复盘。阵地覆盖数据分析、SQL 和 AI Agent 讨论。对外承接页包括比较文、",
+              "把 GEO 做成可复测的考卷，而不是发帖量。用 5 条固定 prompt 记录 ChatGPT 引用谁、引用哪一页；本品类约 37.5% 引用来自 Reddit，所以把 Reddit 当信源层：版规、双账号人设、选题和「可被整段引用」写进同一套 Skill，主帖与嵌套回复指向比较文、",
             ),
             a("What is a Data Agent", "https://infinisynapse.com/en/blog/what-is-a-data-agent"),
             t(" 和 "),
@@ -224,7 +225,7 @@ export const jobs: Job[] = [
           a("u/MongWonP", "https://www.reddit.com/user/MongWonP/"),
           t(" karma 4,957（172 条贡献），账号 "),
           a("u/Haunting-Paint7990", "https://www.reddit.com/user/Haunting-Paint7990/"),
-          t(" karma 827（115 条贡献）。同期归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。"),
+          t(" karma 827（115 条贡献），用来建立社区可信度。ChatGPT 引用从基线 0/5，到第三轮 9 条固定 prompt 中 3 条命中我方 Reddit 埋点（最快 24 小时进入引用）。同期归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。"),
         ],
       },
       {
@@ -567,13 +568,13 @@ export const education = {
 
 export const homeSkills = [
   { name: "增长", detail: "拉新、激活、留存、付费，以及社群承接" },
-  { name: "SEO", detail: "Google SEO、中文搜索内容、Reddit GEO、多平台内容策划" },
+  { name: "SEO / GEO", detail: "Google SEO、ChatGPT 引用基线、Reddit 信源、多平台内容策划" },
   {
     name: "社媒",
     detail: "小红书、抖音、微博、知乎、公众号、视频号、CSDN 博客、Instagram、Facebook、YouTube、X、Discord",
   },
   { name: "KOL", detail: "国内外达人合作、brief 和内容审核" },
-  { name: "AI 工作流", detail: "熟练使用 Cursor、ChatGPT 搭建内容、SEO 和社媒工作流" },
+  { name: "AI 工作流", detail: "熟练使用 Cursor、ChatGPT 搭建内容、SEO/GEO 监测和社媒工作流" },
   { name: "英语", detail: "英语口语流畅，可作为工作语言，能独立完成英文内容制作、海外 KOL 沟通" },
 ];
 
@@ -591,10 +592,11 @@ export const homeChapters = [
     market: "海外 AI 产品 · ToB",
     period: "2025.11 – 2026.10",
     role: "AI Data Agent 全栈运营负责人",
-    summary: "负责官网、内容、视频、社群和海内外增长，以及 ToB 售前。",
+    summary: "负责官网、SEO/GEO、内容、视频、社群和海内外增长，以及 ToB 售前。",
     href: "/work/infinisynapse",
     items: [
       { skill: "SEO", result: "从 0 搭起搜索内容，三个月上线博客 2000+ 页，站点访问到 10 万+。" },
+      { skill: "GEO", result: "用固定 prompt 测 ChatGPT：竞品 Hex 引 6 次、Julius 0 次；我方 Reddit 埋点从 0/5 到 3/9 被引用。" },
       { skill: "社群", result: "建起并维护国内外社群，约 4,000 人，公众号粉丝 3000+。" },
       { skill: "黑客松", result: "设计并推动 Vibe Coding 黑客松，征集到 100+ 个已上线作品。" },
       { skill: "ToB 售前", result: "为企业客户做产品演示和使用手册，并把需求同步给产品。" },
@@ -620,8 +622,8 @@ export const homeChapters = [
 
 export const homeProjects = [
   {
-    title: "SEO 体系",
-    result: "三个月博客 2000+ 页，全站访问 10 万+。",
+    title: "SEO / GEO",
+    result: "比较页与定义页支撑搜索；用固定 prompt 做 ChatGPT 引用基线。",
     href: "https://infinisynapse.com/en/blog",
     link: "英文博客",
   },
@@ -924,7 +926,7 @@ export const timelinePeriods: TimelinePeriod[] = [
     years: "2025.11 – 2026.10",
     title: "InfiniSynapse",
     role: "海外 AI 产品 · ToB",
-    summary: "在职期间推动上线博客 2000+ 页。设计并落地 Vibe Coding 黑客松，征集到 100+ 个上线作品。站点 10 万+ 访问，主要来自 SEO 和这场活动。",
+    summary: "搭建 SEO 与 GEO：比较页拦截采购词，固定 prompt 监测 ChatGPT 引用。站点 10 万+ 访问；黑客松征集到 100+ 个上线作品。",
     href: "/work/infinisynapse",
   },
 ];
