@@ -73,8 +73,8 @@ export const enDict: Record<string, string> = {
   "karma 827（115 条贡献）": "827 karma (115 contributions)",
   "账号 ": "Account ",
   " karma 4,957（172 条贡献），账号 ": " has 4,957 karma (172 contributions). Account ",
-  " karma 827（115 条贡献）。完成定义页与比较页上线，Reddit 双账号持续产出；归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。":
-    " has 827 karma (115 contributions). Definition and comparison pages shipped, both Reddit accounts stayed active, and 100+ posts were archived to set SEO priority. Related videos also ran on WeChat Official Account, Channels, and Bilibili.",
+  " karma 827（115 条贡献）。完成定义页与比较页上线，Reddit 双账号持续产出；归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。":
+    " has 827 karma (115 contributions). Definition and comparison pages shipped, both Reddit accounts stayed active, and 100+ posts were archived to set SEO priority.",
   "3. 运营国内外社媒账号": "3. Ran social accounts in China and overseas",
   "从 0 到 1 搭建品牌社媒运营体系，为各平台单独建运营 Skill，由 AI 完成选题、策划、制作和发布，并把公域线索承接进私域社群。":
     "Built the brand social system from zero, with an operating skill for each platform. AI handles topics, planning, production, and publishing, and public leads are handed into private communities.",

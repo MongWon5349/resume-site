@@ -224,7 +224,7 @@ export const jobs: Job[] = [
           a("u/MongWonP", "https://www.reddit.com/user/MongWonP/"),
           t(" karma 4,957（172 条贡献），账号 "),
           a("u/Haunting-Paint7990", "https://www.reddit.com/user/Haunting-Paint7990/"),
-          t(" karma 827（115 条贡献）。完成定义页与比较页上线，Reddit 双账号持续产出；归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。相关视频同步分发到公众号、视频号和 B 站。"),
+          t(" karma 827（115 条贡献）。完成定义页与比较页上线，Reddit 双账号持续产出；归档 100 余条主帖、回复和复盘，并据此排 SEO 优先级。"),
         ],
       },
       {
