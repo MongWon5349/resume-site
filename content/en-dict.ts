@@ -61,8 +61,8 @@ export const enDict: Record<string, string> = {
   医疗分析: "Healthcare analytics",
   合同分析: "Contract analytics",
   供应链: "Supply chain",
-  "全站访问用户 10万+。海外官网 2026-07-01 至 2026-10-20，PV 3.8 万，用户遍及 166 个国家，Google 自然搜索 4,452。同期 Google 搜索展示为 4,225 次点击、149 万次曝光，平均点击率 0.5%，平均排名 9。国内官网 2026-08-12（百度统计上线后）至 2026-10-20，PV 5,816，平均访问时长 3 分 19 秒，外链占比 27.42%。":
-    "100k+ site visitors. From 1 Jul to 20 Oct 2026 the overseas site had 38k page views across 166 countries and 4,452 Google organic visits. Google Search showed 4,225 clicks, 1.49 million impressions, a 0.5% average CTR, and an average position of 9. From 12 Aug (when Baidu Analytics went live) to 20 Oct 2026, the China site had 5,816 page views, an average visit of 3 minutes 19 seconds, and 27.42% of traffic from external links.",
+  "全站访问用户 10万+。Google 搜索（2026-05-20 至 11-19）5,750 次点击、191 万次展示；6 月到 9 月整月点击约 6.7 倍，日均点击从约 6 次到 11 月（截至 19 日）约 53 次。海外官网 2026-07-01 至 2026-10-20，PV 3.8 万，用户遍及 166 个国家。国内官网 2026-08-12（百度统计上线后）至 2026-10-20，PV 5,816，平均访问时长 3 分 19 秒，外链占比 27.42%。":
+    "100k+ site visitors. Google Search (20 May–19 Nov 2026): 5,750 clicks and 1.91 million impressions. Monthly clicks rose about 6.7× from June to September; daily clicks went from about 6 in June to about 53 in November (through the 19th). From 1 Jul to 20 Oct 2026 the overseas site had 38k page views across 166 countries. From 12 Aug (when Baidu Analytics went live) to 20 Oct 2026, the China site had 5,816 page views, an average visit of 3 minutes 19 seconds, and 27.42% of traffic from external links.",
   "2. 按 GEO 思路做比较页、定义页和 Reddit 信源向内容":
     "2. Built comparison pages, definition pages, and Reddit source-oriented content with a GEO lens",
   "针对 ChatGPT 等回答引擎，按「可检索、可抽取、可核对」来写：比较页拦截选型问题，定义页写清 Data Agent 是什么、不是什么；Reddit 双账号在数据分析、SQL、AI Agent 品类讨论里贡献可核对的细节，并链到官网承接页，包括比较文、":

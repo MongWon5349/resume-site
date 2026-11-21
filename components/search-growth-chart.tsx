@@ -4,9 +4,9 @@ import type { Locale } from "@/lib/i18n";
 const Y_MAX = 1400;
 
 const SERIES = [
-  { id: "clicks", color: "#8ec5ff", values: [100, 437.7, 589.5, 666.5] },
-  { id: "impressions", color: "#5ddeaf", values: [100, 987.1, 1271.4, 934.4] },
-  { id: "ctr", color: "#f0c36a", values: [100, 43.8, 45.8, 70.8] },
+  { id: "clicks", color: "#8ec5ff", values: [100, 423.6, 570.5, 666.5, 646.5, 827.5] },
+  { id: "impressions", color: "#5ddeaf", values: [100, 955.2, 1230.4, 933.6, 739.8, 1099.1] },
+  { id: "ctr", color: "#f0c36a", values: [100, 44.4, 46.4, 71.3, 87.4, 75.3] },
 ] as const;
 
 const WIDTH = 640;
